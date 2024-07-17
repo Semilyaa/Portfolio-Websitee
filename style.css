@@ -147,8 +147,9 @@ nav ul li a:hover::after{
 .header-icons a .fa-facebook:hover{
     color: 	#1876f2aa;
 }
-.header-icons a .fa-twitter:hover{
-    color: #00ACEE;
+.header-icons a .fa-github:hover{
+    color: #f2f2f2;
+    background: #242424;
 }
 .header-icons a .fa-instagram:hover{
     color: #ea5668;
