@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4832b7935e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+
+
+
+    <!-- HEADER -->
+    <div id="header">
+
+      <div class="container">
+
+        <nav>
+          <img src="myImages/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        
+        <div class="header-text">
+          <div class="typingContainer">
+            <span class="text sec-text">Freelancer</span>
+          </div>
+          <h1>Hi, I'm <span class="name">Ashley San Pedro </span><br />from Nueva Ecija</h1>
+          <div class="header-icons">
+            <a href="https://www.facebook.com/ashleyken2/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ashnyieee/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ashley-san-pedro-09a4b3316/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <button><a href="myImages/Ash_CV.pdf" download>Download CV</a></button>
+        </div>
+         
+
+
+      </div>
+    </div>
+
+
+
+
+
+    <!-- About -->
+    <div id="about">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="about-col-1">
+            <img src="myImages/user.jpg" alt="" />
+          </div>
+
+          <div class="about-col-2">
+
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Aspiring IT student seeking an internship to apply technical skills, 
+              gain valuable real-world experience, learn and contribute in a professional 
+              environment. Dedicated to continuous learning and passionate about leveraging 
+              technology to solve complex problems.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programming Languages</span> <br />JavaScript</li>
+                <li>
+                  <span>Web Development</span> <br />HTML/CSS, React, Node.js
+                </li>
+                <li>
+                  <span>Software Development</span> <br />Git & Github
+                </li>
+                <li>
+                  <span>Project Management</span> <br /> Kanban, Project Lifecycle Management, Jira Software
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Frontend Development</span> <br />HTML, CSS, JavaScript, React JS - Vite</span></li>
+                <li><span>CSS Framework</span> <br />Bootstrap</li>
+                <li><span>Version Control System</span> <br />Git</li>
+                <li><span>Project Management/Dev Platform</span> <br />Github, Jira Software</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - Present Tertiary Education</span> <br />College of the Immaculate Conception <br> <span class="address"> Cabanatuan City, 
+                  Nueva Ecija</span>
+                </li>
+                <li>
+                  <span>2018 - 2020 Secondary Education: Senior</span> <br />College of the Immaculate Conception<br> <span class="address">Cabanatuan City, 
+                    Nueva Ecija</span>
+                </li>
+                <li><span> 2014 - 2018 Secondary Education: Junior</span> <br />College of the Immaculate Conception<br> <span class="address">Cabanatuan City, 
+                  Nueva Ecija</span></li>
+                <li><span>2008 - 2014 Primary Education</span> <br />College of the Immaculate Conception<br> <span class="address">Cabanatuan City, 
+                  Nueva Ecija</span></li>
+              </ul>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Certification -->
+    <div id="certification">
+      <div class="container">
+        <h1 class="certi-title">Certification</h1>
+        <div class="certiContainer">
+          <div>
+            <ul>
+              <li><i class="fa-solid fa-certificate"></i>HTML Tutorial<br><span>Great Learning Academy(2024)</span></li>
+              <li><i class="fa-solid fa-certificate"></i>JavaScript Essentials 1<br><span>Cisco Academy (2024)</span></li>
+              <li><i class="fa-solid fa-certificate"></i>JavaScript Essentials 2<br><span>Cisco Academy (2024)</span></li>
+            </ul>
+          </div>
+ 
+          <div>
+            <ul>
+              <li><i class="fa-solid fa-certificate"></i>Introduction to MERN Stack <br><span>SimpliLearn - Skill Up (2024)</span></li>
+              <li><i class="fa-solid fa-certificate"></i>Computer Hardware Basics<br><span>Cisco Academy (2024)</span></li>
+              <li><i class="fa-solid fa-certificate"></i>International Research Conference on Information Technology Education<br><span>PSITE - IRCITE (March 2024)</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <ul>
+              <li><i class="fa-solid fa-certificate"></i>React Hooks Crash Course<br><span>GreatStack.dev</span></li>
+              <li><i class="fa-solid fa-certificate"></i>Unlocking the Power of Artificial Intelligence<br><span>DICT (February 2024)</span></li>
+              <li><i class="fa-solid fa-certificate"></i>The Web Developer Bootcamp<br><span>Udemy Online Course</span></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Frontend Coding</h2>
+            <p>
+              Bringing designs to life through clean, efficient, and responsive code. Utilizing the latest technologies such as HTML, CSS, and JavaScript, I ensure your website performs seamlessly across all browsers and devices.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Web Design</h2>
+            <p>
+              Crafting visually appealing and user-friendly website layouts that ensure an optimal user experience across devices. From color schemes to typography and graphics, I create cohesive designs that align with your brand identity.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Designing intuitive and engaging interfaces for mobile and web applications. I focus on user experience (UX) and user interface (UI) design to create applications that are both aesthetically pleasing and easy to navigate.
+            </p>
+            <a href="">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="myImages/work1.png" />
+            <div class="layer">
+              <h3>To-do List App</h3>
+              <p>
+                Task management tool that helps you organize and prioritize your daily activities. Features include adding, deleting, and finishing tasks.
+              </p>
+              <a href="./To-do-ListApp/todolist.html" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="myImages/work2.png" />
+            <div class="layer">
+              <h3>Text to Voice Converter</h3>
+              <p>
+                A user-friendly application that converts written text into natural-sounding speech. Ideal for creating audio versions of documents, articles, and books, enhancing accessibility and convenience for users.
+              </p>
+              <a href="./Text to Voice Converter App/Text-toVoice.html" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="myImages/work3.png" />
+            <div class="layer">
+              <h3>Dice Roller</h3>
+              <p>
+                A simple and interactive app that simulates the rolling of dice. Perfect for gaming, educational purposes, or just for fun, it allows you to roll multiple dice and displays the results instantly.
+              </p>
+              <a href="./Dice Roller Program/index.html" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>sanpedroash1@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>09459742206</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/ashleyken2/"><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/ashnyieee/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/ashley-san-pedro-09a4b3316/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="myImages/Ash_CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Ashley San Pedro</p>
+        <a href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+
+    <!-- Main JS -->
+    <script src="main.js"></script>
+
+    <!-- For Contact Form -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzuOcaHZBrq9FFi-WlrZjb_XEDjptTf4Xt2e6wO0ZRnSD1HTV0eKgBLEcd5wJbJWNQ8/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg");
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully ✔"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
